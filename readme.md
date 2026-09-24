@@ -1,4 +1,4 @@
-# Digi-Terra
+# Terra Format
 
 ## Installation
 
@@ -6,16 +6,16 @@ If you don't already have Luanti installed, follow the instructions at the [Luan
 
     cd ~/luanti/games
 
-Next, clone the Digiterra forge.
+Next, clone the Terraformat forge.
 
     git clone https://github.com/ericabxy/digi-terra.git
 
-Digiterra is now ready to go. Return to the Luanti root folder and start the game.
+Terraformat is now ready to go. Return to the Luanti root folder and start the game.
 
     cd ~/luanti
     bin/luanti
 
-Digiterra will be selectable as a game in the "Start Game" tab. Just click New to generate a new world and Play Game to get started playing.
+Terraformat will be selectable as a game in the "Start Game" tab. Just click New to generate a new world and Play Game to get started playing.
 
 ## References
 
