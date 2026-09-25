@@ -31,6 +31,10 @@ repository: ericabxy/terra-format
 theme: minima
 minima:
   skin: dark
+  social_links:
+    - title: forge
+      icon: github
+      url: "https://github.com/ericabxy/terra-format
 plugins:
   - jekyll-feed
 
