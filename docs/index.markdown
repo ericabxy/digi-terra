@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+_Terra Format_ has been in development since September, 2026. You can follow the development process by reading devlog entries here.

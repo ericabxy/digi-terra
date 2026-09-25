@@ -1,12 +1,12 @@
 print('This file will be run at load time!')
 
-core.register_node('mymod:dirt', {
+core.register_node('basenodes:dirt', {
 	description = 'Dirt',
 	tiles = {'dirt.png'},
 	groups = {crumbly = 3, soil = 1}
 })
 
-core.register_node("mymod:dirt_with_grass", {
+core.register_node("basenodes:dirt_with_grass", {
 	description = "Dirt with Grass",
 	-- Using overlays here has no real merit here but we do it anyway so
 	-- overlay-related bugs become more apparent in devtest.
@@ -14,19 +14,19 @@ core.register_node("mymod:dirt_with_grass", {
 	groups = {crumbly = 3, soil = 1},
 })
 
-core.register_node('mymod:sand', {
+core.register_node('basenodes:sand', {
 	description = 'Sand',
 	tiles = {'sand.png'},
 	groups = {crumbly = 3}
 })
 
-core.register_node('mymod:stone', {
+core.register_node('basenodes:stone', {
 	description = 'Stone',
 	tiles = {'default_stone.png'},
 	groups = {cracky = 3}
 })
 
-core.register_node('mymod:water', {
+core.register_node('basenodes:water', {
 	description = 'Water',
 	drawtype = 'liquid',
 	tiles = {'water.png'},
@@ -40,7 +40,7 @@ core.register_node('mymod:water', {
 	groups = {water = 3, liquid = 3, cools_lava = 1}
 })
 
-core.register_node("mymod:water_source", {
+core.register_node("basenodes:water_source", {
 	description = "Water Source".."\n"..
 		"Swimmable, spreading, renewable liquid".."\n"..
 		"Drowning damage: 1",
@@ -60,15 +60,15 @@ core.register_node("mymod:water_source", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "source",
-	liquid_alternative_flowing = "mymod:water_flowing",
-	liquid_alternative_source = "mymod:water_source",
+	liquid_alternative_flowing = "basenodes:water_flowing",
+	liquid_alternative_source = "basenodes:water_source",
 	liquid_viscosity = 1,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	post_effect_color_shaded = true,
 	groups = {water = 3, liquid = 3},
 })
 
-core.register_node("mymod:water_flowing", {
+core.register_node("basenodes:water_flowing", {
 	description = "Flowing Water".."\n"..
 		"Swimmable, spreading, renewable liquid".."\n"..
 		"Drowning damage: 1",
@@ -91,8 +91,8 @@ core.register_node("mymod:water_flowing", {
 	is_ground_content = false,
 	drowning = 1,
 	liquidtype = "flowing",
-	liquid_alternative_flowing = "mymod:water_flowing",
-	liquid_alternative_source = "mymod:water_source",
+	liquid_alternative_flowing = "basenodes:water_flowing",
+	liquid_alternative_source = "basenodes:water_source",
 	liquid_viscosity = 1,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	post_effect_color_shaded = true,
@@ -101,11 +101,11 @@ core.register_node("mymod:water_flowing", {
 
 -- ESSENTIAL node aliases
 -- Basic nodes
-core.register_alias("mapgen_stone", "mymod:stone")
-core.register_alias("mapgen_water_source", "mymod:water_source")
-core.register_alias("mapgen_river_water_source", "mymod:water")
+core.register_alias("mapgen_stone", "basenodes:stone")
+core.register_alias("mapgen_water_source", "basenodes:water_source")
+core.register_alias("mapgen_river_water_source", "basenodes:water")
 
 -- Additional essential aliases for v6
-core.register_alias("mapgen_dirt", "mymod:dirt")
-core.register_alias("mapgen_dirt_with_grass", "mymod:dirt_with_grass")
-core.register_alias("mapgen_sand", "mymod:sand")
+core.register_alias("mapgen_dirt", "basenodes:dirt")
+core.register_alias("mapgen_dirt_with_grass", "basenodes:dirt_with_grass")
+core.register_alias("mapgen_sand", "basenodes:sand")
