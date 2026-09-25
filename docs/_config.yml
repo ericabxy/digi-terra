@@ -26,6 +26,9 @@ baseurl: "terra-format" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ericabxy
 repository: ericabxy/terra-format
+author:
+  name: Eric Abides
+  email: eric@radicalgnu.xyz
 
 # Build settings
 theme: minima
