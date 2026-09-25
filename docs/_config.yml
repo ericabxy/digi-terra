@@ -34,9 +34,9 @@ author:
 theme: minima
 minima:
   social_links:
-    - title: terraformat
+    - title: terra-format
       icon: github
-      url: "https://github.com/ericabxy/terra-format
+      url: "https://github.com/ericabxy/terra-format"
 plugins:
   - jekyll-feed
 
