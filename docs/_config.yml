@@ -30,9 +30,7 @@ baseurl: "/terra-format" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Socials
-bluesky_username: ericabxy
 github_username: ericabxy
-gitlab_username: ericabxy
 atproto:
 - handle: ericabxy
   domain: bsky.social
