@@ -32,7 +32,7 @@ theme: minima
 minima:
   skin: dark
   social_links:
-    - title: forge
+    - title: terra-format.git
       icon: github
       url: "https://github.com/ericabxy/terra-format
 plugins:
