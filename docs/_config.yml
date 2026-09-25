@@ -30,7 +30,6 @@ repository: ericabxy/terra-format
 # Build settings
 theme: minima
 minima:
-  skin: dark
   social_links:
     - title: terra-format.git
       icon: github
