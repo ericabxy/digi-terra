@@ -1,0 +1,13 @@
+{%- if site.bluesky_username -%}
+  <li>
+    <a href="https://bsky.app/profile/{{ site.bluesky_username }}.bsky.social">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/assets/extra-social-icons.svg#bluesky' | relative_url }}">
+        </use>
+      </svg>
+      <span class="username">
+        {{ site.bluesky_username | escape }}
+      </span>
+    </a>
+  </li>
+{%- endif -%}

@@ -1,0 +1,13 @@
+{%- if site.gitlab_username -%}
+  <li>
+    <a href="https://gitlab.com/{{ site.gitlab_username }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/assets/extra-social-icons.svg#gitlab' | relative_url }}">
+        </use>
+      </svg>
+      <span class="username">
+        {{ site.gitlab_username | escape }}
+      </span>
+    </a>
+  </li>
+{%- endif -%}

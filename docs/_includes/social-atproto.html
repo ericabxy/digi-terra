@@ -1,0 +1,15 @@
+{%- for att in site.atproto -%}
+  {%- if att.server and att.handle and att.domain -%}
+    <li>
+      <a href="https://{{ att.server| cgi_escape | escape}}/profile/{{att.handle}}.{{ att.domain }}">
+        <svg class="svg-icon">
+          <use xlink:href="{{ '/assets/extra-social-icons.svg#atproto' | relative_url }}">
+          </use>
+        </svg>
+        <span class="username">
+          {{ att.handle|escape }}
+        </span>
+      </a>
+    </li>
+  {%- endif -%}
+{%- endfor -%}
