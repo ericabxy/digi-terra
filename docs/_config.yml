@@ -34,7 +34,7 @@ author:
 theme: minima
 minima:
   social_links:
-    - title: terra-format.git
+    - title: terraformat
       icon: github
       url: "https://github.com/ericabxy/terra-format
 plugins:
